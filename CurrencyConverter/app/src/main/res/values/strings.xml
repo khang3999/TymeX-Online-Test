@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="appName">Currency Converter</string>
+    <string name="amountLabel">Amount:</string>
+    <string name="edt_input_an_amount">Input an amount</string>
+    <string name="currencyLabel">Currency</string>
+    <string name="default_currency">USD</string>
+    <string name="result_exchange">Result:</string>
+    <string name="hint_result_text">0.0</string>
+    <string name="from">From: Loading...</string>
+    <string name="to">To: Loading...</string>
+    <string name="at_loading">At: Loading...</string>
+    <string name="rates">Loading = Loading</string>
+</resources>
