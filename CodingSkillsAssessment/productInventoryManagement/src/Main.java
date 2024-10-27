@@ -32,7 +32,7 @@ public class Main {
                     System.out.printf("Total inventory value: %.2f%n", totalValue);
                     break;
                 case "2":
-                    findTheMostExpensiveProduct(productList);
+                    System.out.printf(findTheMostExpensiveProduct(productList));
                     break;
                 case "3":
                     System.out.print("Enter the product name to check: ");
@@ -70,14 +70,14 @@ public class Main {
     }
 
     //Method: Find the most expensive product
-    public static void findTheMostExpensiveProduct(ArrayList<Product> productList) {
+    public static String findTheMostExpensiveProduct(ArrayList<Product> productList) {
         int indexMostExpensivePrice = 0;
         for (int i = 1; i < productList.size(); i++) {
             if (productList.get(i).getPrice() > productList.get(indexMostExpensivePrice).getPrice()) {
                 indexMostExpensivePrice = i;
             }
         }
-        System.out.println("The most expensive product is: "+productList.get(indexMostExpensivePrice).getName());
+        return "The most expensive product is: "+productList.get(indexMostExpensivePrice).getName();
     }
 
     //Method: Check product in stock
