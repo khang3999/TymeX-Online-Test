@@ -13,9 +13,12 @@ public class Main {
     }
 
     public static int findMissingNumber(int[] arr) {
+        // -2 1 -2 0
         Arrays.sort(arr);
         for (int i = 0; i < arr.length - 1; i++) {
-            if (arr[i] + 1 != arr[i + 1]) {
+            if (arr[i] < 0) {
+                return Integer.MIN_VALUE;
+            }else if (arr[i] + 1 != arr[i + 1]) {
                 return arr[i] + 1;
             }
         }
